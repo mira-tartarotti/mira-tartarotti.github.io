@@ -3,28 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic website of Mira Tartarotti.">
     <title>Mira Tartarotti</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Mira Tartarotti</h1>
-        </header>
+    <header class="site-header">
+        <div class="page-width header-inner">
+            <a class="site-name" href="#about">Mira Tartarotti</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#talks">Talks</a>
+                <a href="#teaching">Teaching</a>
+            </nav>
+        </div>
+    </header>
 
-        <section class="bio">
-            <h2>About Me</h2>
-            <p>
-                I am a DPhil student at the Mathematical Institute of the University of Oxford, supervised by Martin Bays and Ehud Hrushovski.
-            </p>
-            <p>
-                
-            </p>
+    <main class="page-width">
+        <section id="about" class="intro" aria-labelledby="about-heading">
+            <div class="photo-column">
+                <img class="profile-photo" src="profile.jpg" alt="Portrait of Mira Tartarotti" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="profile-photo photo-placeholder" aria-label="Profile photo placeholder" style="display:none;">
+                    <span>Photo</span>
+                </div>
+            </div>
+
+            <div class="intro-copy">
+                <h1 id="about-heading">Mira Tartarotti</h1>
+                <p>I am a DPhil student in Mathematics at the University of Oxford, supervised by Martin Bays and Ehud Hrushovski. Previously, I did the MSc in Mathematics and Foundations of Computer Science at Oxford, where I wrote a master's thesis supervised by Ehud Hrushovski.</p>
+                <p>My research interests are broadly around model theory. To name some, I have found much joy learning about continuous logic, distality, descriptive set theory and C*-algebras.</p>
+                <p>You can contact me at <a class="email-link" href="mailto:tartarotti@maths.ox.ac.uk">tartarotti<span class="email-at">(at)</span>maths.ox.ac.uk</a>.</p>
+                <p><a class="cv-link" href="CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></p>
+            </div>
         </section>
 
-        <section class="dissertation">
-            <a href="tartarotti_msc_thesis.pdf" class="pdf-link" target="_blank">My master's thesis </a>
+        <section id="research" class="content-section">
+            <details>
+                <summary>Research</summary>
+                <div class="section-content entry-list">
+                    <div class="entry">
+                        <p><span class="entry-title">Relative Distality and Incidence Bounds in Positive Characteristic.</span> <span class="status">In progress.</span></p>
+                    </div>
+                    <div class="entry">
+                        <p><a class="entry-title" href="https://arxiv.org/abs/2601.01735" target="_blank" rel="noopener noreferrer">A Game-Theoretic Unital Classification Theorem for C∗-Algebras</a>, with Jennifer Pi and Michał Szachniewicz. Preprint.</p>
+                    </div>
+                    <div class="entry">
+                        <p><a class="entry-title" href="tartarotti_msc_thesis.pdf" target="_blank" rel="noopener noreferrer">The Lascar Group and Reconstruction Problems in Model Theory</a>. Master's thesis.</p>
+                    </div>
+                </div>
+            </details>
         </section>
-    </div>
+
+        <section id="talks" class="content-section">
+            <details>
+                <summary>Talks</summary>
+                <div class="section-content entry-list">
+                    <div class="entry"><p><strong class="entry-title">Incidence bounds and relative distality.</strong> Oberseminar Logic, Universität Bonn, 13 July 2026.</p></div>
+                    <div class="entry"><p><strong class="entry-title">The Joys of Completeness: An Invitation to First-Order Logic.</strong> St. John’s College Mathematical Sciences Graduate Seminar, University of Oxford, 18 May 2026. <a href="talk-slides-joys-of-completeness.pdf">Slides</a>.</p></div>
+                    <div class="entry"><p><strong class="entry-title">Infinitary logic and the classification of separable C*-algebras.</strong> <a href="https://www.juliawolf.org/seminars/seemod26.shtml" target="_blank" rel="noopener noreferrer">SEEMOD</a>, Cambridge, 14 March 2026.</p></div>
+                    <div class="entry"><p><strong class="entry-title">Relative distality and incidence bounds in valued fields with finite residue field.</strong> <a href="https://pelefthe.github.io/FW/" target="_blank" rel="noopener noreferrer">Workshop on Tame Geometry and Combinatorics</a>, Leeds, 16–19 March 2026.</p></div>
+                    <div class="entry"><p><strong class="entry-title">Logic and games: A brief overview.</strong> <a href="https://ncgandtprague.wordpress.com/2026/02/26/3-march-2026-mira-tartarotti-university-of-oxford/" target="_blank" rel="noopener noreferrer">NCG&amp;T Pre-Seminar</a>, Prague, 3 March 2026.</p></div>
+                    <div class="entry"><p><strong class="entry-title">Relative distality and incidence bounds for valued fields with finite residue field.</strong> <a href="https://www.uni-muenster.de/FB10/Service/show_article.shtml?id=10878&amp;brettid=" target="_blank" rel="noopener noreferrer">Research seminar Model theory and groups</a>, Universität Münster, 29 January 2026.</p></div>
+                    <div class="entry"><p><strong class="entry-title">Notes on a reconstruction theorem of Lascar.</strong> <a href="https://www.mfo.de/www/activity/2551" target="_blank" rel="noopener noreferrer">Oberwolfach workshop: Homogeneous Structures: Model Theory meets Universal Algebra</a>, Oberwolfach, 14–19 December 2025. <a href="talk-slides-lascar-reconstruction.pdf">Slides</a>.</p></div>
+                    <div class="entry"><p><strong class="entry-title">Incidence bounds in positive characteristic and relative distality.</strong> Séminaire Général de Logique, Paris, 8 December 2025.</p></div>
+                    <div class="entry"><p><strong class="entry-title">The Lascar group and reconstruction of ω-categorical structures.</strong> <a href="https://www.mathematik.uni-konstanz.de/beratung-und-service/kwim/" target="_blank" rel="noopener noreferrer">Konstanz Women in Mathematics</a>, 2 December 2024. <a href="talk-slides-lascar-group.pdf">Slides</a>.</p></div>
+                    <div class="entry"><p><strong class="entry-title">Reconstructing an ω-categorical structure from its endomorphism monoid.</strong> <a href="https://mathematik.univie.ac.at/en/research/seminars/seminars-at-the-kgrc/research-seminar-in-model-theory/?no_cache=1" target="_blank" rel="noopener noreferrer">Research Seminar in Model Theory</a>, Universität Wien, 24 April 2024.</p></div>
+                    <div class="entry"><p><strong class="entry-title">Borel Determinacy.</strong> <a href="https://www.dmg.tuwien.ac.at/fg1/FG1Seminar.html" target="_blank" rel="noopener noreferrer">Algebra Seminar</a>, TU Wien, 1 July 2022.</p></div>
+                </div>
+            </details>
+        </section>
+
+        <section id="teaching" class="content-section">
+            <details>
+                <summary>Teaching</summary>
+                <div class="section-content">
+                    <p>In Michaelmas and Hilary term 2026/27, I will be a fixed-term stipendiary lecturer in Mathematics at St John's College in Oxford, teaching first-year undergraduates.</p>
+                    <p>At Oxford, I have tutored:</p>
+                    <ul>
+                        <li><strong>C1.1 Model Theory</strong></li>
+                        <li><strong>M1 Linear Algebra I</strong> <span class="detail">(St John’s College)</span></li>
+                        <li><strong>M1 Linear Algebra II</strong> <span class="detail">(St John’s College)</span></li>
+                        <li><strong>Introduction to University Mathematics</strong> <span class="detail">(St John’s College)</span></li>
+                    </ul>
+                    <p>I have been a TA for:</p>
+                    <ul>
+                        <li><strong>B1.1 Logic</strong></li>
+                        <li><strong>B1.2 Set Theory</strong></li>
+                    </ul>
+                    <p>At TU Wien, I was a tutor for:</p>
+                    <ul>
+                        <li><strong>Mathematics 1 for Civil Engineering and Mechanical Engineering</strong></li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+    </main>
+
+    <script>
+        const sections = [...document.querySelectorAll('.content-section details')];
+
+        function closeOthers(current) {
+            sections.forEach((other) => {
+                if (other !== current) other.open = false;
+            });
+        }
+
+        function openSection(id, scroll = true) {
+            const section = document.getElementById(id);
+            const details = section ? section.querySelector('details') : null;
+            if (!details) return;
+
+            details.open = true;
+            closeOthers(details);
+            if (scroll) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        sections.forEach((details) => {
+            details.addEventListener('toggle', () => {
+                if (details.open) closeOthers(details);
+            });
+        });
+
+        document.querySelectorAll('.site-nav a').forEach((link) => {
+            link.addEventListener('click', (event) => {
+                const id = link.getAttribute('href').slice(1);
+                if (id === 'about') return;
+                event.preventDefault();
+                history.pushState(null, '', `#${id}`);
+                openSection(id);
+            });
+        });
+
+        window.addEventListener('hashchange', () => {
+            const id = window.location.hash.slice(1);
+            if (id && id !== 'about') openSection(id);
+        });
+
+        const initialId = window.location.hash.slice(1);
+        if (initialId && initialId !== 'about') openSection(initialId, false);
+    </script>
 </body>
 </html>
